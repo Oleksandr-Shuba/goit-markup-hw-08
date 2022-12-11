@@ -1,0 +1,34 @@
+.soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    color: #AFB1B8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--trans-n-250), background-color var(--trans-n-250);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue);
+        transition: color var(--trans-n-250), background-color var(--trans-n-250);
+    }
+
+}
+
+.soc-icon {
+    fill: #AFB1B8;
+    transition: color var(--trans-n-250), background-color var(--trans-n-250);
+
+    .soc-link:hover &,
+    .soc-link:focus & {
+        fill: var(--white);
+        transition: color var(--trans-n-250), background-color var(--trans-n-250);
+    }
+}

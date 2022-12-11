@@ -1,0 +1,74 @@
+.top-banner {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0px;
+    background-color: var(--dark-grey);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/index/header-Img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    & .btn-blue:hover,
+    & .btn-blue:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .top-banner-title {
+        color: var(--white);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white);
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btn-blue {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        margin: 0px auto;
+        display: block;
+        padding: 10px 32px;
+        color: var(--white);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: color var(--trans-n-250), background-color var(--trans-n-250);
+    }
+}
+
+.top-banner-specific .top-banner-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    text-transform: uppercase;
+    color: var(--text-main-color);
+}
+
+.top-banner-specific .top-banner-list {
+    display: flex;
+    gap: 30px;
+}
+
+.top-banner-item .icon {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.top-banner-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    margin-top: 10px;
+}
