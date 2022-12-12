@@ -12,6 +12,11 @@
 .customers-list {
     display: flex;
     gap: 30px;
+    @media screen and (min-width: 480px) {
+            max-width: 448px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
 }
 
