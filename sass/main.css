@@ -70,7 +70,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .section {
-    max-width: 448px;
+    min-width: 448px;
     padding: 60px 15px;
   }
 }
@@ -770,7 +770,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .top-banner-specific .top-banner-title {
-    max-width: 448px;
     text-align: center;
     justify-content: center;
   }
@@ -782,7 +781,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .top-banner-specific .top-banner-list {
-    max-width: 480px;
     flex-wrap: wrap;
     margin-bottom: 60px;
   }
@@ -819,8 +817,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .activity {
-    max-width: 448px;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -865,7 +862,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .team-list {
-    max-width: 448px;
     flex-wrap: wrap;
   }
 }
@@ -877,7 +873,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .team-list-item {
-    max-width: 448px;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -902,7 +897,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .team-member-pic {
-    max-width: 448px;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -930,7 +924,12 @@ a {
   gap: 10px;
 }
 
-.customers-title {
+@media screen and (min-width: 480px) {
+  .customers {
+    padding-top: 0px;
+  }
+}
+.customers .customers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -940,24 +939,20 @@ a {
   padding-top: 50px;
   margin-bottom: 50px;
 }
-
-.customers-list {
+.customers .customers-list {
   display: flex;
   gap: 30px;
 }
 @media screen and (min-width: 480px) {
-  .customers-list {
-    max-width: 448px;
+  .customers .customers-list {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-
-.container-customers {
+.customers .container-customers {
   border-radius: 4px;
 }
-
-.customers-link {
+.customers .customers-link {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   fill: #AFB1B8;
@@ -965,7 +960,7 @@ a {
   padding: 16px 32px;
   transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
-.customers-link:hover, .customers-link:focus {
+.customers .customers-link:hover, .customers .customers-link:focus {
   border-color: var(--blue);
   fill: var(--blue);
 }/*# sourceMappingURL=main.css.map */
