@@ -18,11 +18,17 @@
 .header-container {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 480px) {
+        max-width: 448px;
+       
+    }
 }
 
 
 .header {
     border: 1px solid #ECECEC;
+
 
     .contact-list {
         display: flex;
@@ -38,7 +44,6 @@
 
     }
 }
-
 
 
 .nav-list {

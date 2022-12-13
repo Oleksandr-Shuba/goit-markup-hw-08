@@ -2,10 +2,18 @@
     display: flex;
     gap: 70px;
     align-items: baseline;
+    @media screen and (min-width: 480px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
 .footer .logo {
     margin-bottom: 20px;
     margin-right: 0;
+    @media screen and (min-width: 480px) {
+            text-align: center;
+        }
+
 
 }
 
@@ -25,6 +33,8 @@
     letter-spacing: 0.03em;
     color: var(--mixed);
     transition: color var(--trans-n-250);
+    
+
 
 }
 
@@ -32,6 +42,10 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+    @media screen and (min-width: 480px) {
+            align-items: center;
+        }
+    
 }
 
 .footer .contact:hover,
@@ -51,6 +65,7 @@
     text-transform: uppercase;
     color: var(--white);
     margin: 0px 0px 20px;
+    text-align: center;
 
 }
 
@@ -85,11 +100,16 @@
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 20px;
-
+    text-align: center;
+    
 }
 
 .subscrition-email-form {
     display: flex;
+    @media screen and (min-width: 480px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
 
 .footer-input {
@@ -109,6 +129,8 @@
     border-radius: 4px;
     background-color: var(--dark-grey);
     transition: border-color var(--trans-n-250), outline var(--trans-n-250);
+    width: 100%;
+    margin-bottom: 20px;
 
 &::placeholder {
     font-weight: 400;

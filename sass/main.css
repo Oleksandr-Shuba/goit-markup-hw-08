@@ -70,7 +70,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .section {
-    min-width: 448px;
     padding: 60px 15px;
   }
 }
@@ -94,6 +93,11 @@ a {
 .header-container {
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .header-container {
+    max-width: 448px;
+  }
 }
 
 .header {
@@ -206,10 +210,21 @@ a {
   gap: 70px;
   align-items: baseline;
 }
+@media screen and (min-width: 480px) {
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .footer .logo {
   margin-bottom: 20px;
   margin-right: 0;
+}
+@media screen and (min-width: 480px) {
+  .footer .logo {
+    text-align: center;
+  }
 }
 
 .footer .studio {
@@ -235,6 +250,11 @@ a {
   flex-direction: column;
   gap: 9px;
 }
+@media screen and (min-width: 480px) {
+  .footer .contact-list {
+    align-items: center;
+  }
+}
 
 .footer .contact:hover,
 .footer .contact:focus {
@@ -253,6 +273,7 @@ a {
   text-transform: uppercase;
   color: var(--white);
   margin: 0px 0px 20px;
+  text-align: center;
 }
 
 .footer .soc-items {
@@ -285,10 +306,17 @@ a {
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .subscrition-email-form {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .subscrition-email-form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer-input {
@@ -308,6 +336,8 @@ a {
   border-radius: 4px;
   background-color: var(--dark-grey);
   transition: border-color var(--trans-n-250), outline var(--trans-n-250);
+  width: 100%;
+  margin-bottom: 20px;
 }
 .footer-input::-moz-placeholder {
   font-weight: 400;
