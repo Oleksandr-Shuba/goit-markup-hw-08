@@ -94,11 +94,6 @@ a {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 480px) {
-  .header-container {
-    max-width: 448px;
-  }
-}
 
 .header {
   border: 1px solid #ECECEC;
