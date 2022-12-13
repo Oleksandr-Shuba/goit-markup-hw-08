@@ -50,12 +50,12 @@ a {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 448px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -85,6 +85,11 @@ a {
   margin-right: 93px;
   display: block;
 }
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+}
 
 .studio {
   color: #000000;
@@ -93,6 +98,27 @@ a {
 .header-container {
   display: flex;
   align-items: center;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--text-main-color);
+  background-color: transparent;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
+  display: none;
 }
 
 .header {
@@ -770,6 +796,11 @@ a {
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .top-banner .top-banner-title {
+    font-size: 26px;
+  }
+}
 .top-banner .btn-blue {
   font-weight: 700;
   font-size: 16px;
@@ -811,6 +842,17 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .top-banner-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-banner-item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
 .top-banner-item .icon {
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -843,6 +885,11 @@ a {
 @media screen and (min-width: 480px) {
   .activity {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: flex;
   }
 }
 
@@ -903,9 +950,24 @@ a {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .team-title {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .team-title {
+    font-size: 28px;
+  }
 }
 
 .team-member {
@@ -964,6 +1026,11 @@ a {
   padding-top: 50px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .customers .customers-title {
+    font-size: 28px;
+  }
+}
 .customers .customers-list {
   display: flex;
   gap: 30px;
@@ -972,6 +1039,16 @@ a {
   .customers .customers-list {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers .customers-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers .customers-item {
+    width: calc((100% - 150px) / 6);
   }
 }
 .customers .container-customers {

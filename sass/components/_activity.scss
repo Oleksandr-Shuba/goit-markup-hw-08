@@ -11,7 +11,10 @@
 .activity {
     padding-top: 0;
     @media screen and (min-width: 480px) {
-            display: none;
+        display: none;
+    }
+        @media screen and (min-width: 1200px) {
+            display: flex;
         }
 }
 
@@ -22,12 +25,12 @@
     gap: 30px;
     padding-top: 50px;
     
-
 }
 
 .activity-list-item {
     list-style: none;
     position: relative;
+    
 }
 
 .activity-text {
