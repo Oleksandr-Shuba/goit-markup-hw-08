@@ -7,9 +7,8 @@
     display: flex;
     gap: 30px;
 
-    @media screen and (min-width: 480px) {
+    @include mobile {
         flex-wrap: wrap;
-
     }
 }
 
@@ -18,28 +17,29 @@
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white);
 
-    @media screen and (min-width: 480px) {
+    @include mobile {
         width: 100%;
         justify-content: center;
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: calc((100% - 30px) / 2);
 
     }
 
-         @media screen and (min-width: 1200px) {
-             width: calc((100% - 90px) / 4);
-    
-         }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+
+    }
 }
 
 .team-title {
     margin-bottom: 50px;
-    @media screen and (min-width: 480px) {
-            font-size: 28px;
-        }
+
+    @include mobile {
+        font-size: 28px;
+    }
 }
 
 .team-member {
@@ -55,7 +55,7 @@
 .team-member-pic {
     display: block;
 
-    @media screen and (min-width: 480px) {
+    @include mobile {
         justify-content: center;
         text-align: center;
         width: 100%;

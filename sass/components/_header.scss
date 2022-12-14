@@ -8,7 +8,7 @@
     color: var(--blue);
     margin-right: 93px;
     display: block;
-    @media screen and (min-width: 480px) {
+    @include mobile {
             font-size: 24px;
         }
 }

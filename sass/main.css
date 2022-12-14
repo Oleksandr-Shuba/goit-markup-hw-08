@@ -43,7 +43,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -824,7 +824,7 @@ a {
   text-transform: uppercase;
   color: var(--text-main-color);
 }
-@media screen and (min-width: 480px) {
+@in {
   .top-banner-specific .top-banner-title {
     text-align: center;
     justify-content: center;

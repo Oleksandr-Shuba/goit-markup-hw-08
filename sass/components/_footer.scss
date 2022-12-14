@@ -2,23 +2,27 @@
     display: flex;
     gap: 70px;
     align-items: baseline;
-    @media screen and (min-width: 480px) {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
 .footer .logo {
     margin-bottom: 20px;
     margin-right: 0;
-    @media screen and (min-width: 480px) {
-            text-align: center;
-        }
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .footer .studio {
     color: var(--white);
 
 }
+
 .footer {
     background-color: var(--dark-grey);
     padding: 60px 0px;
@@ -31,7 +35,7 @@
     letter-spacing: 0.03em;
     color: var(--mixed);
     transition: color var(--trans-n-250);
-    
+
 
 
 }
@@ -40,12 +44,13 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
-    @media screen and (min-width: 480px) {
-            align-items: center;
-        }
 
-                
-    
+    @include mobile {
+        align-items: center;
+    }
+
+
+
 }
 
 .footer .contact:hover,
@@ -92,6 +97,7 @@
     background: var(--blue);
     transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
+
 .subscription-title {
     font-weight: 700;
     font-size: 14px;
@@ -101,16 +107,17 @@
     color: var(--white);
     margin-bottom: 20px;
     text-align: center;
-    
+
 }
 
 .subscrition-email-form {
     display: flex;
+
     @media screen and (min-width: 480px) {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 .footer-input {
@@ -133,15 +140,15 @@
     width: 100%;
     margin-bottom: 20px;
 
-&::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 
@@ -184,28 +191,26 @@
     letter-spacing: 0.02em;
     color: var(--text-main-color);
     display: block;
+
     &:hover,
     &:focus,
     &.active {
-    color: var(--blue);
-    font-size: 14px;
-}
+        color: var(--blue);
+        font-size: 14px;
+    }
+
     &.active::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px;
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-}
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+    }
 }
 
 .nav-list-item {
     position: relative;
 }
-
-
-
-
