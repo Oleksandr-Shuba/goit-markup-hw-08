@@ -8,9 +8,10 @@
     color: var(--blue);
     margin-right: 93px;
     display: block;
+
     @include mobile {
-            font-size: 24px;
-        }
+        font-size: 24px;
+    }
 }
 
 .studio {
@@ -23,24 +24,36 @@
     align-items: center;
 
 }
-.menu-button{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    color: var(--text-main-color);
-    background-color: transparent;
-}
-.menu-button .icon-menu {
-    display: none;
-}
-.menu-button.is-open .icon-menu {
-    display: block;
-}
-.menu-button.is-open .icon-cross{
-    display: none;
-}
 
+.menu-button {
+    @include desktop {
+        display: none;
+    }
+
+    @include mobile {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        color: var(--text-main-color);
+        background-color: transparent;
+
+        .icon-cross {
+            display: none;
+        }
+
+        &.is-open {
+            .icon-cross {
+                display: block;
+            }
+
+            .icon-menu {
+                display: none;
+            }
+        }
+    }
+
+}
 
 .header {
     border: 1px solid #ECECEC;
