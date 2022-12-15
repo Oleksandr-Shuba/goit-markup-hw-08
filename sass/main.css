@@ -43,6 +43,11 @@ a {
   padding: 32px 0px;
   transition: color var(--trans-n-250);
 }
+@media screen and (min-width: 768px) {
+  .link {
+    padding: 48px 0px;
+  }
+}
 
 .container {
   width: 100%;
@@ -136,6 +141,27 @@ a {
   gap: 50px;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .header .contact-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .contact-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .contact-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+  }
+}
 .header .contact-list-item .contact {
   padding: 32px 0px;
 }
@@ -144,9 +170,41 @@ a {
   display: flex;
   gap: 50px;
 }
+@media screen and (min-width: 480px) {
+  .nav-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    display: flex;
+    gap: 50px;
+  }
+}
 
 .nav-list-item {
   position: relative;
+}
+@media screen and (min-width: 480px) {
+  .nav-list-item {
+    display: contents;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list-item {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list-item {
+    display: flex;
+  }
 }
 
 .link {
@@ -170,6 +228,21 @@ a {
   position: absolute;
   bottom: -1px;
   left: 0px;
+}
+@media screen and (min-width: 480px) {
+  .link.active::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link.active::after {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link.active::after {
+    display: block;
+  }
 }
 
 .contact {

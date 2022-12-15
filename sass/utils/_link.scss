@@ -2,4 +2,8 @@
     text-decoration: none;
     padding: 32px 0px;
     transition: color var(--trans-n-250);
+
+    @include tablet {
+        padding: 48px 0px;
+    }
 }
