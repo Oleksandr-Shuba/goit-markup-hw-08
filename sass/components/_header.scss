@@ -218,36 +218,11 @@
     display: flex;
     gap: 50px;
 
-    // @include mobile {
-    //     display: none;
-    // }
-
-    // @include tablet {
-    //     display: flex;
-    //     gap: 50px;
-    // }
-
-    // @include desktop {
-    //     display: flex;
-    //     gap: 50px;
-    // }
 }
 
 
 .nav-list-item {
     position: relative;
-
-    // @include mobile {
-    //     display: contents;
-    // }
-
-    // @include tablet {
-    //     display: flex;
-    // }
-
-    // @include desktop {
-    //     display: flex;
-    // }
 
 }
 

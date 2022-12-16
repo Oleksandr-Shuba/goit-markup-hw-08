@@ -5,7 +5,7 @@
     padding: 200px 0px;
     background-color: var(--dark-grey);
     background-image: var(--grad-linear),
-        url('../../images/index/header-desk-1x.jpg');
+        url('../images/index/header-desk-1x.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,25 +19,25 @@
 
     @include mobile {
         background-image: var(--grad-linear),
-            url('../../images/index/header-mob_1x.jpg');
+            url('../images/index/header-mob_1x.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: var(--grad-linear),
-                url('../../images/index/header-mob-2x.jpg');
+                url('../images/index/header-mob-2x.jpg');
         }
     }
 
     @include tablet {
         background-image: var(--grad-linear),
-            url('../../images/index/header-tab-1x.jpg');
+            url('../images/index/header-tab-1x.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: var(--grad-linear),
-                url('../../images/index/header-tab-2x.jpg');
+                url('../images/index/header-tab-2x.jpg');
         }
     }
 
