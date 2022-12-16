@@ -25,34 +25,172 @@
 
 }
 
-.menu-button {
+.desktop-menu {
+
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+.non-desktop-menu {
+
+    @include mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    @include tablet {
+        display: flex;
+        width: 100%;
+    }
+
+
     @include desktop {
         display: none;
     }
 
-    @include mobile {
-        display: inline-flex;
-        margin: 0;
-        padding: 0;
-        border: none;
-        color: var(--text-main-color);
-        background-color: transparent;
-
-        .icon-cross {
-            display: none;
-        }
+    .mobile-menu-container {
+        z-index: 1;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        padding: 48px 40px;
+        overflow-y: auto;
 
         &.is-open {
-            .icon-cross {
-                display: block;
-            }
-
-            .icon-menu {
-                display: none;
-            }
+            display: block;
         }
     }
 
+    .mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 302px;
+        gap: 32px;
+    }
+
+    .mobile-contact-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 64px;
+        gap: 32px;
+
+    }
+
+    .mobile-social-list {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .mobile-social-list .mobile-menu-soc:not(:last-child)::after {
+        content: "";
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        color: var(--text-main-color);
+        margin: 0px 10px;
+
+    }
+
+    .mobile-menu-item {
+
+        .mobile-link {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: var(--text-main-color);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            &.active {
+                color: var(--blue);
+            }
+        }
+
+
+    }
+
+
+
+    .mobile-menu-tel {
+
+        .mobile-link {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: var(--blue);
+        }
+
+    }
+
+    .mobile-menu-email {
+        .mobile-link {
+            font-weight: 500;
+                font-size: 24px;
+                line-height: 1.16;
+                letter-spacing: 0.02em;
+                color: var(--grey);
+        }
+
+
+    }
+
+
+    .mobile-menu-soc {
+        .mobile-link{
+            font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--blue);
+        }
+        
+
+    }
+
+}
+
+.mobile-menu-button {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    padding: 7px 7px 7px 0px;
+    border: none;
+    color: var(--text-main-color);
+    background-color: transparent;
+
+    .icon-cross {
+        display: none;
+    }
+
+    &.is-open {
+        position: fixed;
+        right: 25px;
+        top: 21px;
+
+        .icon-cross {
+            display: block;
+        }
+
+        .icon-menu {
+            display: none;
+        }
+    }
 }
 
 .header {
@@ -64,24 +202,6 @@
         align-items: center;
         gap: 50px;
         margin-left: auto;
-
-        @include mobile {
-            display: none;
-        }
-
-        @include tablet {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            margin-left: auto;
-        }
-
-        @include desktop {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            margin-left: auto;
-        }
     }
 
     .contact-list-item {
@@ -98,36 +218,36 @@
     display: flex;
     gap: 50px;
 
-    @include mobile {
-        display: none;
-    }
+    // @include mobile {
+    //     display: none;
+    // }
 
-    @include tablet {
-        display: flex;
-        gap: 50px;
-    }
+    // @include tablet {
+    //     display: flex;
+    //     gap: 50px;
+    // }
 
-    @include desktop {
-        display: flex;
-        gap: 50px;
-    }
+    // @include desktop {
+    //     display: flex;
+    //     gap: 50px;
+    // }
 }
 
 
 .nav-list-item {
     position: relative;
 
-    @include mobile {
-        display: contents;
-    }
+    // @include mobile {
+    //     display: contents;
+    // }
 
-    @include tablet {
-        display: flex;
-    }
+    // @include tablet {
+    //     display: flex;
+    // }
 
-    @include desktop {
-        display: flex;
-    }
+    // @include desktop {
+    //     display: flex;
+    // }
 
 }
 
