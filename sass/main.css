@@ -971,15 +971,9 @@ a {
   margin-right: auto;
   padding: 200px 0px;
   background-color: var(--dark-grey);
-  background-image: var(--grad-linear), url("../images/index/header-desk-1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .top-banner {
-    background-image: var(--grad-linear), url("../images/index/header-desk-2x.jpg");
-  }
 }
 @media screen and (min-width: 480px) {
   .top-banner {
@@ -999,6 +993,16 @@ a {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .top-banner {
     background-image: var(--grad-linear), url("../images/index/header-tab-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-banner {
+    background-image: var(--grad-linear), url("../images/index/header-desk-1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .top-banner {
+    background-image: var(--grad-linear), url("../images/index/header-desk-2x.jpg");
   }
 }
 .top-banner .btn-blue:hover, .top-banner .btn-blue:focus {

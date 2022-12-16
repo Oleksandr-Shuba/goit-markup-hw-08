@@ -4,18 +4,11 @@
     margin-right: auto;
     padding: 200px 0px;
     background-color: var(--dark-grey);
-    background-image: var(--grad-linear),
-        url('../images/index/header-desk-1x.jpg');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: var(--grad-linear),
-            url('../images/index/header-desk-2x.jpg');
-    }
 
     @include mobile {
         background-image: var(--grad-linear),
@@ -39,8 +32,21 @@
             background-image: var(--grad-linear),
                 url('../images/index/header-tab-2x.jpg');
         }
+
     }
 
+    @include desktop {
+        background-image: var(--grad-linear),
+            url('../images/index/header-desk-1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: var(--grad-linear),
+                url('../images/index/header-desk-2x.jpg');
+        }
+
+    }
 
     & .btn-blue:hover,
     & .btn-blue:focus {
