@@ -10,8 +10,20 @@
     display: block;
 
     @include mobile {
+        display: block;
         font-size: 24px;
     }
+
+    @include tablet {
+        display: flex;
+        margin-right: 87px;
+    }
+
+    @include desktop {
+        display: flex;
+        margin-right: 92px;
+    }
+
 }
 
 .studio {
@@ -33,7 +45,8 @@
     }
 
     @include tablet {
-        display: none;
+        display: flex;
+        width: 100%;
     }
 
     @include desktop {
@@ -51,10 +64,8 @@
     }
 
     @include tablet {
-        display: flex;
-        width: 100%;
+        display: none;
     }
-
 
     @include desktop {
         display: none;
@@ -141,10 +152,10 @@
     .mobile-menu-email {
         .mobile-link {
             font-weight: 500;
-                font-size: 24px;
-                line-height: 1.16;
-                letter-spacing: 0.02em;
-                color: var(--grey);
+            font-size: 24px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            color: var(--grey);
         }
 
 
@@ -152,14 +163,14 @@
 
 
     .mobile-menu-soc {
-        .mobile-link{
+        .mobile-link {
             font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: var(--blue);
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: var(--blue);
         }
-        
+
 
     }
 
@@ -196,73 +207,72 @@
 .header {
     border: 1px solid #ECECEC;
 
-
     .contact-list {
         display: flex;
         align-items: center;
         gap: 50px;
         margin-left: auto;
+
     }
 
     .contact-list-item {
         .contact {
             padding: 32px 0px;
-
         }
+    }
+
+
+    .nav-list {
+        display: flex;
+        gap: 50px;
 
     }
-}
 
 
-.nav-list {
-    display: flex;
-    gap: 50px;
+    .nav-list-item {
+        position: relative;
 
-}
+    }
 
-
-.nav-list-item {
-    position: relative;
-
-}
-
-.link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-main-color);
-    display: block;
-
-
-    &:hover,
-    &:focus,
-    &.active {
-        color: var(--blue);
+    .link {
+        font-weight: 500;
         font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--text-main-color);
+        display: block;
+
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: var(--blue);
+            font-size: 14px;
+        }
+
+        &.active::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: #2196F3;
+            border-radius: 2px;
+            position: absolute;
+            bottom: -1px;
+            left: 0px;
+
+            @include mobile {
+                display: none;
+            }
+
+            @include tablet {
+                display: block;
+                gap: 50px;
+            }
+
+            @include desktop {
+                display: block;
+                gap: 50px;
+            }
+        }
+
     }
-
-    &.active::after {
-        content: '';
-        width: 100%;
-        height: 4px;
-        background: #2196F3;
-        border-radius: 2px;
-        position: absolute;
-        bottom: -1px;
-        left: 0px;
-
-        @include mobile {
-            display: none;
-        }
-
-        @include tablet {
-            display: block;
-        }
-
-        @include desktop {
-            display: block;
-        }
-    }
-
-}

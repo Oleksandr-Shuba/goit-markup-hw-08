@@ -43,11 +43,6 @@ a {
   padding: 32px 0px;
   transition: color var(--trans-n-250);
 }
-@media screen and (min-width: 768px) {
-  .link {
-    padding: 48px 0px;
-  }
-}
 
 .container {
   width: 100%;
@@ -94,7 +89,20 @@ a {
 }
 @media screen and (min-width: 480px) {
   .logo {
+    display: block;
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    display: flex;
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    display: flex;
+    margin-right: 92px;
   }
 }
 
@@ -114,7 +122,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .desktop-menu {
-    display: none;
+    display: flex;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -132,8 +141,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .non-desktop-menu {
-    display: flex;
-    width: 100%;
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -247,7 +255,6 @@ a {
 .header .contact-list-item .contact {
   padding: 32px 0px;
 }
-
 .nav-list {
   display: flex;
   gap: 50px;
@@ -287,11 +294,13 @@ a {
 @media screen and (min-width: 768px) {
   .link.active::after {
     display: block;
+    gap: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   .link.active::after {
     display: block;
+    gap: 50px;
   }
 }
 
