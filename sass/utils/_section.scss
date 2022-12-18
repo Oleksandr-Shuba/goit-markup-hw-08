@@ -1,7 +1,14 @@
 .section {
     padding-bottom: 94px;
     padding-top: 94px;
-    @media screen and (min-width: 480px) {
-            padding: 60px 15px;
-        }
+
+    @include mobile {
+        padding: 60px 15px;
+    }
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }

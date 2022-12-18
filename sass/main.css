@@ -75,6 +75,12 @@ a {
     padding: 60px 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -84,18 +90,17 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--blue);
-  margin-right: 93px;
+  margin-right: 92px;
   display: block;
 }
 @media screen and (min-width: 480px) {
   .logo {
-    display: block;
+    display: flex;
     font-size: 24px;
   }
 }
 @media screen and (min-width: 768px) {
   .logo {
-    display: flex;
     margin-right: 87px;
   }
 }
@@ -103,6 +108,7 @@ a {
   .logo {
     display: flex;
     margin-right: 92px;
+    font-size: 26px;
   }
 }
 
@@ -113,6 +119,7 @@ a {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -223,7 +230,7 @@ a {
   position: relative;
   z-index: 2;
   margin-left: auto;
-  padding: 7px 7px 7px 0px;
+  padding: 22px 7px 22px 0px;
   border: none;
   color: var(--text-main-color);
   background-color: transparent;
@@ -252,19 +259,39 @@ a {
   gap: 50px;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .header .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .contact-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+    flex-direction: row;
+  }
+}
 .header .contact-list-item .contact {
   padding: 32px 0px;
 }
-.nav-list {
+@media screen and (min-width: 768px) {
+  .header .contact-list-item .contact {
+    padding: 0px;
+  }
+}
+.header .nav-list {
   display: flex;
   gap: 50px;
 }
-
-.nav-list-item {
+.header .nav-list-item {
   position: relative;
 }
-
-.link {
+.header .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -272,11 +299,11 @@ a {
   color: var(--text-main-color);
   display: block;
 }
-.link:hover, .link:focus, .link.active {
+.header .link:hover, .header .link:focus, .header .link.active {
   color: var(--blue);
   font-size: 14px;
 }
-.link.active::after {
+.header .link.active::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -287,18 +314,18 @@ a {
   left: 0px;
 }
 @media screen and (min-width: 480px) {
-  .link.active::after {
+  .header .link.active::after {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .link.active::after {
+  .header .link.active::after {
     display: block;
     gap: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .link.active::after {
+  .header .link.active::after {
     display: block;
     gap: 50px;
   }
@@ -396,11 +423,18 @@ a {
 @media screen and (min-width: 480px) {
   .footer .logo {
     text-align: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .logo {
     text-align: justify;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+    text-align: center;
+    justify-content: flex-start;
   }
 }
 
@@ -979,6 +1013,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0px;
+  background-image: var(--grad-linear), url("../images/index/header-mob-2x.jpg");
   background-color: var(--dark-grey);
   background-size: cover;
   background-position: center;
@@ -986,22 +1021,22 @@ a {
 }
 @media screen and (min-width: 480px) {
   .top-banner {
-    background-image: var(--grad-linear), url("../images/index/header-mob_1x.jpg");
+    background-image: var(--grad-linear), url("../images/index/header-tab-1x.jpg");
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .top-banner {
-    background-image: var(--grad-linear), url("../images/index/header-mob-2x.jpg");
+    background-image: var(--grad-linear), url("../images/index/header-tab-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .top-banner {
-    background-image: var(--grad-linear), url("../images/index/header-tab-1x.jpg");
+    background-image: var(--grad-linear), url("../images/index/header-desk-1x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .top-banner {
-    background-image: var(--grad-linear), url("../images/index/header-tab-2x.jpg");
+    background-image: var(--grad-linear), url("../images/index/header-desk-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {

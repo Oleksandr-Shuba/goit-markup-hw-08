@@ -26,10 +26,16 @@
 
     @include mobile {
         text-align: center;
+        justify-content: center;
+        
     }
 
     @include desktop {
         text-align: justify;
+    }
+    @include desktop {
+        text-align: center;
+        justify-content: flex-start;
     }
 }
 
