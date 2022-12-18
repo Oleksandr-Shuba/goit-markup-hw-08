@@ -15,6 +15,11 @@
         display: none;
     }
 
+    @include tablet {
+        display: none;
+    }
+
+
     @include desktop {
         display: flex;
     }

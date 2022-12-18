@@ -276,12 +276,14 @@ a {
     flex-direction: row;
   }
 }
-.header .contact-list-item .contact {
-  padding: 32px 0px;
-}
 @media screen and (min-width: 768px) {
   .header .contact-list-item .contact {
     padding: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .contact-list-item .contact {
+    padding: 32px 0px;
   }
 }
 .header .nav-list {
@@ -1094,6 +1096,11 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
+  .top-banner-specific .top-banner-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
   .top-banner-specific .top-banner-list .top-banner-item {
     width: calc((100% - 30px) / 2);
   }
@@ -1152,6 +1159,11 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .activity {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .activity {
     display: flex;
@@ -1198,6 +1210,11 @@ a {
   gap: 30px;
 }
 @media screen and (max-width: 767px) {
+  .team-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
   .team-list {
     flex-wrap: wrap;
   }
@@ -1304,6 +1321,11 @@ a {
   .customers .customers-list {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers .customers-list {
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {

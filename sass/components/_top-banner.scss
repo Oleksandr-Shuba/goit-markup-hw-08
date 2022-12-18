@@ -4,7 +4,7 @@
     margin-right: auto;
     padding: 200px 0px;
     background-image: var(--grad-linear),
-            url('../images/index/header-mob-2x.jpg');
+        url('../images/index/header-mob-2x.jpg');
     background-color: var(--dark-grey);
     background-size: cover;
     background-position: center;
@@ -99,6 +99,11 @@
         @include mobile {
             flex-wrap: wrap;
             margin-bottom: 60px;
+        }
+
+        @include tablet {
+            flex-wrap: wrap;
+
         }
 
         .top-banner-item {

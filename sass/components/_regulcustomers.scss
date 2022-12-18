@@ -27,6 +27,11 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        @include tablet {
+            flex-wrap: wrap;
+
+        }
     }
 
     .customers-item {
