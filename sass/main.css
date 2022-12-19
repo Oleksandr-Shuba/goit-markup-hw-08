@@ -1349,6 +1349,12 @@ a {
   padding: 16px 32px;
   transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
+@media screen and (min-width: 768px) {
+  .customers .customers-link {
+    display: flex;
+    justify-content: center;
+  }
+}
 .customers .customers-link:hover, .customers .customers-link:focus {
   border-color: var(--blue);
   fill: var(--blue);
